@@ -40,7 +40,7 @@ I recommend that you use [virtualenv](http://virtualenv.readthedocs.org/) to
 isolate your development environment from system [Python](https://python.org)
 and any packages that may be installed there.
 
-    mkdir virtualenvs
+    mkdir ~/venvs
     virtualenv ~/venvs/pericles
     source ~/venvs/pericles/bin/activate
     pip install -r requirements.txt
