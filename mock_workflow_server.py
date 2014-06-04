@@ -48,6 +48,20 @@ def get_workflow(identifier):
         abort(404)
 
 
+@app.route('/workflows/<identifier>/<int:step>', methods=['GET'])
+def get_workflow_step(identifier, step):
+    """Get and return the requested workflow step."""
+    global workflows
+    try:
+        return (
+            json.dumps(workflows[identifier]['wf'][step]),
+            200,
+            {'Content-Type': "application/json"}
+        )
+    except (KeyError, IndexError):
+        abort(404)
+
+
 # Load dummy workflows from json
 with open('workflows.json') as fh:
     workflow_list = json.load(fh)
