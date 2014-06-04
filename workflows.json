@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "wf": [
+            {
+                "id": "componentX",
+                "url": "http://127.0.0.1/handlers/x",
+                "params": [
+                    "--in INFILE",
+                    "--out OUTFILE"
+                ]
+            },
+            {
+                "id": "componentY",
+                "url": "http://127.0.0.1/handlers/y",
+                "params": [
+                    "--validate",
+                    "--in INFILE"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "wf": [
+            {
+                "id": "componentY",
+                "url": "http://127.0.0.1/handlers/y",
+                "params": [
+                    "--validate",
+                    "--in INFILE"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "wf": [
+            {
+                "id": "componentZ",
+                "url": "http://127.0.0.1/handlers/z",
+                "params": [
+                    "--format mpeg4",
+                    "--in INFILE",
+                    "--out OUTFILE"
+                ]
+            }
+        ]
+    }
+]
