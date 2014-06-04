@@ -48,4 +48,4 @@ and any packages that may be installed there.
 Run
 ---
 
-    python mock_workflow_server.py
+    PLANK_HOST=localhost PLANK_PORT=7000python mock_workflow_server.py
