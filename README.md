@@ -17,7 +17,7 @@ A Dummy Workflow Server for PERICLES
 
   OSX:
 
-      brew?
+      sudo brew install python # if not already installed
 
 - [pip](http://pip.readthedocs.org/)
 
@@ -31,7 +31,7 @@ A Dummy Workflow Server for PERICLES
 
   OSX:
 
-      brew?
+      sudo easy_install pip
 
 
 ## Install
